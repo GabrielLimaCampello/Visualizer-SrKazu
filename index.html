@@ -1,0 +1,9 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Kazu VIZ Scene Editor</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><div><small>IMPORTADO DE VISUALIZER DJ FKU.VIZ</small><h1>Kazu VIZ Scene Editor</h1></div><button id="play">▶</button></header>
+<main><section class="preview"><canvas id="c" width="1920" height="1080"></canvas><audio id="audio"></audio><div class="transport"><label>🎵 Música<input id="audioFile" type="file" accept="audio/*"></label><button id="reset">Restaurar template</button></div></section>
+<section class="editor"><nav><button data-tab="slots" class="on">Mídias</button><button data-tab="layers">Camadas</button><button data-tab="effects">Efeitos</button><button data-tab="info">Estrutura</button></nav>
+<div id="slots" class="tab on"><h2>Slots substituíveis</h2><p>Estes arquivos são os recursos reais incorporados no .viz. Substitua-os para usar a arte do vídeo ou qualquer outra capa.</p><div id="slotList"></div></div>
+<div id="layers" class="tab"><h2>Camadas do .viz</h2><div id="layerList"></div></div>
+<div id="effects" class="tab"><h2>Controles equivalentes</h2><div id="fxList"></div></div>
+<div id="info" class="tab"><h2>Importação real</h2><div class="stats"><b>43</b><span>composições</span><b>98</b><span>elementos</span></div><p>O app usa o scene.json extraído do arquivo enviado, preserva a árvore e expõe seus elementos. O motor web recria os efeitos visualmente; ele não executa o código proprietário do Avee.</p><pre id="tree"></pre></div>
+</section></main><script src="app.js"></script></body></html>
